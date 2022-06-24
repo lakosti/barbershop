@@ -321,11 +321,52 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close-modal" width="20" height="20">
             <use href=""></use>
           </svg>
         </button>
+        <p class="modal-title">Записаться к мастеру</p>
+        <p class="modal-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic quibusdam.
+        </p>
+        <form class="modal-form">
+          <label class="modal-label" for="user-name"> Имя</label>
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            placeholder="Джонсон"
+            required
+            id="user-name"
+          />
+          <label class="modal-label" for="user-tel"> Телефон</label>
+          <input
+            type="tel"
+            name="user-tel"
+            class="modal-input"
+            placeholder="+380 (95) 000-00-00"
+            minlength="13"
+            maxlength="13"
+            title="+38095000-00-00"
+            required
+            id="user-tel"
+          />
+          <label for="modal-text"></label>
+          <textarea
+            name="modal-text"
+            id="modal-text"
+            class="modal-textarea"
+            placeholder="Оставьте свой комментарий"
+          ></textarea>
+          <button type="submit" class="btn modal-btn">Отправить</button>
+          <!-- <label for="service">Услуга</label>
+          <select id="service" name="service"></select>
+          <input type="date" name="" id="" />
+          <input type="time" name="" id="" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <button type="submit">Отправить</button> -->
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
