@@ -585,8 +585,7 @@ body {
 }
 .modal-input:focus,
 .modal-input:hover {
-  /* cursor: pointer; */
-  outline: 1px solid var(--accent-color);
+  outline: transparent;
 }
 .modal-input::placeholder {
   font-size: 15px;
@@ -594,12 +593,12 @@ body {
   color: rgba(99, 97, 97, 0.603);
 }
 .modal-input:not(:placeholder-shown):not(:focus):valid {
-  outline: 1px solid rgb(129, 200, 129);
   background-color: rgb(168, 198, 168);
+  border: 1px solid rgb(129, 200, 129);
 }
 .modal-input:not(:placeholder-shown):not(:focus):invalid {
   background-color: rgb(222, 162, 162);
-  outline: 1px solid rgb(227, 112, 112);
+  border: 1px solid rgb(227, 112, 112);
 }
 /* .modal-input:placeholder-shown {
   background-color: transparent;
